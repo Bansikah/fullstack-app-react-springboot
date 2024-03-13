@@ -2,10 +2,7 @@ name: Build, deploy and docker build frontend
 
 on:
   push:
-    branches:
-      - '**'
-    tags-ignore:
-      - 'v*'
+    branches: [ 'main' ]
     paths:
       - 'fullstack-app-react-springboot/**'
 

@@ -1,4 +1,3 @@
-#Build and deploy
 name: Build and publish Docker image
 
 on:

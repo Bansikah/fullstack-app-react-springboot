@@ -47,12 +47,12 @@ To run the e2e-banking-app project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ADORSYS-GIS/e2e-banking-app.git
+   https://github.com/Bansikah/fullstack-app-react-springboot.git
    ```
 
 2. Change to the project directory:
    ```bash
-   cd e2e-banking-app
+   cd address-book
    ```
 
 3. Install project dependencies and Start application:
@@ -60,7 +60,7 @@ To run the e2e-banking-app project locally, follow these steps:
    a. For power-pay-front-end:
       - Change to the project directory:
         ```bash
-        cd power-pay-frontend
+        cd frontend
         ```
       - Install dependencies:
         ```bash
@@ -78,7 +78,7 @@ To run the e2e-banking-app project locally, follow these steps:
    b. For power-pay-backend:
       - Change to the project directory:
         ```bash
-        cd power-pay-backend
+        cd backend
         ```
       - Install dependencies:
         ```bash
@@ -90,19 +90,7 @@ To run the e2e-banking-app project locally, follow these steps:
         ```
       - Start application:
         ```bash
-        java -jar target/power-pay-backend-0.0.1-SNAPSHOT.jar
+        java -jar target/backend-0.0.1-SNAPSHOT.jar
         ```
 
-   c. For power-pay-translator:
-      - Change to the project directory:
-        ```bash
-        cd power-pay-translator
-        ```
-      - Build the project:
-        ```bash
-        cargo build
-        ```
-      - Start application:
-        ```bash
-        cargo run
-        ```
+ 

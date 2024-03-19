@@ -1,0 +1,21 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    width: auto;
+    height: auto;    
+}
+.mainHeader {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    
+} */

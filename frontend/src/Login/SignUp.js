@@ -1,8 +1,25 @@
 import React from 'react'
+import { useState } from 'react'
 // import './SignUp.css'
 
 import { Box, Typography, TextField, Button } from '@mui/material'
 const SignUp = () => {
+
+  const [formData, setFormData] = useState ([
+    {
+      name: '',
+      email: '',
+      password: ''
+    }
+  ]);
+
+  const onchangeInput = (e) => {
+     setFormData(() =>({
+      ...formData, [e.target.value]: e.target.value
+     }))
+   };
+
+
   return (
     <Box sx={{
 
@@ -26,15 +43,15 @@ const SignUp = () => {
                     flexDirection: 'column',
                     width: '50%', }}>
                     
-                     <TextField id="outlined-basic" label="Name" variant="outlined" width = '200px' fullWidth={true} />
+                     <TextField onChange={onchangeInput} type={'text'}  label="Name" variant="outlined" width = '200px' fullWidth={true} />
                      
-                     <TextField id="outlined-basic" label="Email" variant="outlined" width = '200px' fullWidth={true} mb = '20' sx={{mt:5}} />
-                     <TextField id="outlined-basic" label="Number" variant="outlined" width = '200px' fullWidth={true} mb = '20' sx={{mt:5}}/>
+                     <TextField type={'email'} onChange={onchangeInput}   label="Email" variant="outlined" width = '200px' fullWidth={true} mb = '20' sx={{mt:5}} />
+                     <TextField type="number" onChange={onchangeInput}   label="Number" variant="outlined" width = '200px' fullWidth={true} mb = '20' sx={{mt:5}}/>
 
                                 
                             </Box>
 
-                <Button variant="contained" color="primary" sx={{
+                <Button variant="contained" color="primary" onClick={() => console.log(formData)}  sx={{
                     width: '200px',
                     mt: 5,
                     mb: 10,
